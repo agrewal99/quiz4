@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancer Prevention and Screening Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    fieldset {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    .button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .explanation {
+      margin-top: 10px;
+      background-color: #f8f8f8;
+      padding: 8px;
+      border-left: 3px solid #007bff;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cancer Prevention and Screening Quiz</h1>
+    <form id="quizForm">
+
+      <!-- Question 1 -->
+      <fieldset data-answer="2">
+        <legend>1. What is the primary focus of cancer prevention strategies?</legend>
+        <label><input type="radio" name="q1" value="1">Early diagnosis of cancer</label>
+        <label><input type="radio" name="q1" value="2">Reducing risk factors and avoiding carcinogens</label>
+        <label><input type="radio" name="q1" value="3">Improving quality of life after treatment</label>
+        <label><input type="radio" name="q1" value="4">Increasing healthcare provider visits</label>
+        <p class="explanation">Correct Answer: 2. Cancer prevention strategies focus on reducing risk factors and avoiding exposure to carcinogens.</p>
+      </fieldset>
+
+      <!-- Question 2 -->
+      <fieldset data-answer="3">
+        <legend>2. Which is an example of primary prevention for cancer?</legend>
+        <label><input type="radio" name="q2" value="1">Screening for early cancer</label>
+        <label><input type="radio" name="q2" value="2">Chemotherapy for cancer treatment</label>
+        <label><input type="radio" name="q2" value="3">Lifestyle modification, such as avoiding smoking</label>
+        <label><input type="radio" name="q2" value="4">Palliative care</label>
+        <p class="explanation">Correct Answer: 3. Primary prevention involves actions such as lifestyle changes to reduce the risk of developing cancer.</p>
+      </fieldset>
+
+      <!-- Question 3 -->
+      <fieldset data-answer="1">
+        <legend>3. What is chemoprevention in cancer prevention?</legend>
+        <label><input type="radio" name="q3" value="1">Use of drugs to prevent cancer in high-risk individuals</label>
+        <label><input type="radio" name="q3" value="2">Surgical removal of tumors</label>
+        <label><input type="radio" name="q3" value="3">Immunotherapy to treat cancer</label>
+        <label><input type="radio" name="q3" value="4">Hormone therapy</label>
+        <p class="explanation">Correct Answer: 1. Chemoprevention refers to using drugs to prevent cancer, especially in individuals at high risk.</p>
+      </fieldset>
+
+      <!-- Question 4 -->
+      <fieldset data-answer="4">
+        <legend>4. Which type of prevention aims to remove precancerous lesions?</legend>
+        <label><input type="radio" name="q4" value="1">Primary prevention</label>
+        <label><input type="radio" name="q4" value="2">Secondary prevention</label>
+        <label><input type="radio" name="q4" value="3">Quaternary prevention</label>
+        <label><input type="radio" name="q4" value="4">Tertiary prevention</label>
+        <p class="explanation">Correct Answer: 4. Tertiary prevention involves removing precancerous lesions to prevent invasive cancer.</p>
+      </fieldset>
+
+      <!-- Question 5 -->
+      <fieldset data-answer="3">
+        <legend>5. What does secondary prevention of cancer focus on?</legend>
+        <label><input type="radio" name="q5" value="1">Lifestyle modification</label>
+        <label><input type="radio" name="q5" value="2">Vaccination</label>
+        <label><input type="radio" name="q5" value="3">Early detection and intervention</label>
+        <label><input type="radio" name="q5" value="4">End-of-life care</label>
+        <p class="explanation">Correct Answer: 3. Secondary prevention focuses on early detection of cancer and preventing its progression.</p>
+      </fieldset>
+
+      <!-- Question 6 -->
+      <fieldset data-answer="2">
+        <legend>6. Which cancer prevention strategy is described as stimulating the immune system to prevent cancer?</legend>
+        <label><input type="radio" name="q6" value="1">Chemoprevention</label>
+        <label><input type="radio" name="q6" value="2">Immunoprevention</label>
+        <label><input type="radio" name="q6" value="3">Lifestyle modification</label>
+        <label><input type="radio" name="q6" value="4">Surgery</label>
+        <p class="explanation">Correct Answer: 2. Immunoprevention involves stimulating the immune system to prevent cancer formation.</p>
+      </fieldset>
+
+      <!-- Question 7 -->
+      <fieldset data-answer="1">
+        <legend>7. Which screening method is recommended for individuals at high risk for breast cancer in Ontario?</legend>
+        <label><input type="radio" name="q7" value="1">Mammography and MRI</label>
+        <label><input type="radio" name="q7" value="2">Ultrasound only</label>
+        <label><input type="radio" name="q7" value="3">Blood test</label>
+        <label><input type="radio" name="q7" value="4">Physical exam</label>
+        <p class="explanation">Correct Answer: 1. High-risk individuals are recommended to have yearly mammography and MRI for breast cancer screening in Ontario.</p>
+      </fieldset>
+
+      <!-- Question 8 -->
+      <fieldset data-answer="4">
+        <legend>8. What age group is recommended for biennial breast cancer screening in Ontario?</legend>
+        <label><input type="radio" name="q8" value="1">30 to 39</label>
+        <label><input type="radio" name="q8" value="2">40 to 49</label>
+        <label><input type="radio" name="q8" value="3">75 and above</label>
+        <label><input type="radio" name="q8" value="4">50 to 74</label>
+        <p class="explanation">Correct Answer: 4. Women aged 50 to 74 are recommended for biennial breast cancer screening.</p>
+      </fieldset>
+
+      <!-- Question 9 -->
+      <fieldset data-answer="2">
+        <legend>9. What is the primary screening tool used for colorectal cancer detection in average-risk individuals?</legend>
+        <label><input type="radio" name="q9" value="1">Colonoscopy</label>
+        <label><input type="radio" name="q9" value="2">Fecal Immunochemical Test (FIT)</label>
+        <label><input type="radio" name="q9" value="3">Blood test</label>
+        <label><input type="radio" name="q9" value="4">Barium enema</label>
+        <p class="explanation">Correct Answer: 2. FIT is the primary screening tool for colorectal cancer in average-risk individuals.</p>
+      </fieldset>
+
+      <!-- Question 10 -->
+      <fieldset data-answer="1">
+        <legend>10. Which of the following is a benefit of mammographic screening for breast cancer?</legend>
+        <label><input type="radio" name="q10" value="1">Early detection and improved treatment outcomes</label>
+        <label><input type="radio" name="q10" value="2">Guaranteed cancer prevention</label>
+        <label><input type="radio" name="q10" value="3">Increased healthcare costs</label>
+        <label><input type="radio" name="q10" value="4">Avoiding chemotherapy</label>
+        <p class="explanation">Correct Answer: 1. Mammographic screening allows early detection of breast cancer, which improves treatment outcomes.</p>
+      </fieldset>
+
+<!-- Question 11 -->
+<fieldset data-answer="3">
+    <legend>11. Which factor is considered a modifiable risk for cancer prevention?</legend>
+    <label><input type="radio" name="q11" value="1">Age</label>
+    <label><input type="radio" name="q11" value="2">Family history</label>
+    <label><input type="radio" name="q11" value="3">Smoking</label>
+    <label><input type="radio" name="q11" value="4">Genetics</label>
+    <p class="explanation">Correct Answer: 3. Smoking is a modifiable risk factor that can be changed to reduce cancer risk.</p>
+  </fieldset>
+  
+  <!-- Question 12 -->
+  <fieldset data-answer="1">
+    <legend>12. What is the aim of opportunistic screening?</legend>
+    <label><input type="radio" name="q12" value="1">Screen individuals during routine healthcare visits</label>
+    <label><input type="radio" name="q12" value="2">Screen all individuals in a specific age group</label>
+    <label><input type="radio" name="q12" value="3">Screen only patients showing symptoms</label>
+    <label><input type="radio" name="q12" value="4">Prevent unnecessary screening</label>
+    <p class="explanation">Correct Answer: 1. Opportunistic screening is conducted during routine healthcare visits when a patient visits a healthcare provider.</p>
+  </fieldset>
+  
+  <!-- Question 13 -->
+  <fieldset data-answer="2">
+    <legend>13. What type of cancer does the HPV vaccine primarily prevent?</legend>
+    <label><input type="radio" name="q13" value="1">Breast cancer</label>
+    <label><input type="radio" name="q13" value="2">Cervical cancer</label>
+    <label><input type="radio" name="q13" value="3">Colorectal cancer</label>
+    <label><input type="radio" name="q13" value="4">Lung cancer</label>
+    <p class="explanation">Correct Answer: 2. The HPV vaccine helps prevent cervical cancer by protecting against the human papillomavirus.</p>
+  </fieldset>
+  
+  <!-- Question 14 -->
+  <fieldset data-answer="4">
+    <legend>14. Which screening type involves testing individuals without symptoms of a disease?</legend>
+    <label><input type="radio" name="q14" value="1">Tertiary screening</label>
+    <label><input type="radio" name="q14" value="2">Diagnostic testing</label>
+    <label><input type="radio" name="q14" value="3">Confirmatory testing</label>
+    <label><input type="radio" name="q14" value="4">Programmatic screening</label>
+    <p class="explanation">Correct Answer: 4. Programmatic screening is a standardized approach used to screen individuals without symptoms of a disease.</p>
+  </fieldset>
+  
+  <!-- Question 15 -->
+  <fieldset data-answer="1">
+    <legend>15. What is the recommended screening tool for individuals at high risk for colorectal cancer?</legend>
+    <label><input type="radio" name="q15" value="1">Colonoscopy</label>
+    <label><input type="radio" name="q15" value="2">Fecal Immunochemical Test (FIT)</label>
+    <label><input type="radio" name="q15" value="3">Mammogram</label>
+    <label><input type="radio" name="q15" value="4">Blood test</label>
+    <p class="explanation">Correct Answer: 1. Colonoscopy is recommended for individuals at high risk for colorectal cancer.</p>
+  </fieldset>
+  
+  <!-- Question 16 -->
+  <fieldset data-answer="3">
+    <legend>16. What is a common goal of cancer screening programs?</legend>
+    <label><input type="radio" name="q16" value="1">Increase healthcare costs</label>
+    <label><input type="radio" name="q16" value="2">Promote lifestyle changes</label>
+    <label><input type="radio" name="q16" value="3">Detect cancer at an early stage</label>
+    <label><input type="radio" name="q16" value="4">Provide treatment options</label>
+    <p class="explanation">Correct Answer: 3. The main goal of cancer screening programs is to detect cancer at an early stage, improving treatment outcomes.</p>
+  </fieldset>
+  
+  <!-- Question 17 -->
+  <fieldset data-answer="2">
+    <legend>17. What age group is eligible for lung cancer screening in Ontario?</legend>
+    <label><input type="radio" name="q17" value="1">40 to 59</label>
+    <label><input type="radio" name="q17" value="2">55 to 74</label>
+    <label><input type="radio" name="q17" value="3">30 to 49</label>
+    <label><input type="radio" name="q17" value="4">75 and above</label>
+    <p class="explanation">Correct Answer: 2. Individuals aged 55 to 74 are eligible for lung cancer screening if they have smoked for at least 20 years.</p>
+  </fieldset>
+  
+  <!-- Question 18 -->
+  <fieldset data-answer="1">
+    <legend>18. Which cancer screening method reduces the need for dietary restrictions before testing?</legend>
+    <label><input type="radio" name="q18" value="1">Fecal Immunochemical Test (FIT)</label>
+    <label><input type="radio" name="q18" value="2">gFOBT (guaiac Fecal Occult Blood Test)</label>
+    <label><input type="radio" name="q18" value="3">Colonoscopy</label>
+    <label><input type="radio" name="q18" value="4">Endoscopy</label>
+    <p class="explanation">Correct Answer: 1. The Fecal Immunochemical Test (FIT) does not require dietary restrictions, unlike gFOBT.</p>
+  </fieldset>
+  
+  <!-- Question 19 -->
+  <fieldset data-answer="4">
+    <legend>19. Which of the following cancers can be prevented through vaccination?</legend>
+    <label><input type="radio" name="q19" value="1">Breast cancer</label>
+    <label><input type="radio" name="q19" value="2">Lung cancer</label>
+    <label><input type="radio" name="q19" value="3">Colorectal cancer</label>
+    <label><input type="radio" name="q19" value="4">Cervical cancer</label>
+    <p class="explanation">Correct Answer: 4. Cervical cancer can be prevented through vaccination, specifically with the HPV vaccine.</p>
+  </fieldset>
+  
+  <!-- Question 20 -->
+  <fieldset data-answer="3">
+    <legend>20. What does the term "chemoprevention" mean in the context of breast cancer?</legend>
+    <label><input type="radio" name="q20" value="1">Removal of the breast tissue</label>
+    <label><input type="radio" name="q20" value="2">Use of immunotherapy</label>
+    <label><input type="radio" name="q20" value="3">Use of drugs to reduce the risk of developing breast cancer</label>
+    <label><input type="radio" name="q20" value="4">Vaccination against breast cancer</label>
+    <p class="explanation">Correct Answer: 3. Chemoprevention in breast cancer involves using drugs to reduce the risk of developing cancer, especially in high-risk individuals.</p>
+  </fieldset>
+  
+
+  <!-- Question 21 -->
+<fieldset data-answer="4">
+    <legend>21. What is a key component of primary cancer prevention?</legend>
+    <label><input type="radio" name="q21" value="1">Genetic screening</label>
+    <label><input type="radio" name="q21" value="2">Chemotherapy</label>
+    <label><input type="radio" name="q21" value="3">Early detection of cancer</label>
+    <label><input type="radio" name="q21" value="4">Avoidance of carcinogen exposure</label>
+    <p class="explanation">Correct Answer: 4. Primary prevention involves avoiding exposure to carcinogens and modifying lifestyle choices to reduce cancer risk.</p>
+  </fieldset>
+  
+  <!-- Question 22 -->
+  <fieldset data-answer="2">
+    <legend>22. What age group is advised against systematic mammography screening based on Canadian guidelines for breast cancer prevention?</legend>
+    <label><input type="radio" name="q22" value="1">30 to 39</label>
+    <label><input type="radio" name="q22" value="2">40 to 49</label>
+    <label><input type="radio" name="q22" value="3">50 to 59</label>
+    <label><input type="radio" name="q22" value="4">60 to 74</label>
+    <p class="explanation">Correct Answer: 2. The guidelines suggest not systematically screening women aged 40 to 49 with mammography, though individual preferences may vary.</p>
+  </fieldset>
+  
+  <!-- Question 23 -->
+  <fieldset data-answer="3">
+    <legend>23. What type of cancer prevention is aimed at reversing the carcinogenic process?</legend>
+    <label><input type="radio" name="q23" value="1">Primary prevention</label>
+    <label><input type="radio" name="q23" value="2">Tertiary prevention</label>
+    <label><input type="radio" name="q23" value="3">Secondary prevention</label>
+    <label><input type="radio" name="q23" value="4">Quaternary prevention</label>
+    <p class="explanation">Correct Answer: 3. Secondary prevention involves slowing, blocking, or reversing the carcinogenic process before cancer becomes invasive.</p>
+  </fieldset>
+  
+  <!-- Question 24 -->
+  <fieldset data-answer="1">
+    <legend>24. What is the recommended frequency of mammography for women aged 50 to 74 in Ontario?</legend>
+    <label><input type="radio" name="q24" value="1">Every 2 to 3 years</label>
+    <label><input type="radio" name="q24" value="2">Every 6 months</label>
+    <label><input type="radio" name="q24" value="3">Once in a lifetime</label>
+    <label><input type="radio" name="q24" value="4">Annually</label>
+    <p class="explanation">Correct Answer: 1. Women aged 50 to 74 are advised to undergo mammography every 2 to 3 years.</p>
+  </fieldset>
+  
+  <!-- Question 25 -->
+  <fieldset data-answer="2">
+    <legend>25. Which cancer type can be detected through a fecal immunochemical test (FIT)?</legend>
+    <label><input type="radio" name="q25" value="1">Lung cancer</label>
+    <label><input type="radio" name="q25" value="2">Colorectal cancer</label>
+    <label><input type="radio" name="q25" value="3">Skin cancer</label>
+    <label><input type="radio" name="q25" value="4">Cervical cancer</label>
+    <p class="explanation">Correct Answer: 2. The fecal immunochemical test (FIT) is used to screen for colorectal cancer by detecting blood in stool samples.</p>
+  </fieldset>
+  
+  <!-- Question 26 -->
+  <fieldset data-answer="3">
+    <legend>26. What is the primary goal of lung cancer screening using low-dose computed tomography (LDCT)?</legend>
+    <label><input type="radio" name="q26" value="1">Assess smoking intensity</label>
+    <label><input type="radio" name="q26" value="2">Provide smoking cessation support</label>
+    <label><input type="radio" name="q26" value="3">Detect lung cancer early in high-risk individuals</label>
+    <label><input type="radio" name="q26" value="4">Screen individuals below the age of 40</label>
+    <p class="explanation">Correct Answer: 3. LDCT is used to detect lung cancer early in high-risk individuals, particularly those with a significant smoking history.</p>
+  </fieldset>
+  
+  <!-- Question 27 -->
+  <fieldset data-answer="4">
+    <legend>27. Which of the following is a benefit of early cancer detection through screening?</legend>
+    <label><input type="radio" name="q27" value="1">Avoiding all treatments</label>
+    <label><input type="radio" name="q27" value="2">Reducing healthcare costs immediately</label>
+    <label><input type="radio" name="q27" value="3">Preventing all types of cancer</label>
+    <label><input type="radio" name="q27" value="4">Increasing the chances of successful treatment</label>
+    <p class="explanation">Correct Answer: 4. Early detection of cancer through screening increases the chances of successful treatment and better outcomes.</p>
+  </fieldset>
+  
+  <!-- Question 28 -->
+  <fieldset data-answer="1">
+    <legend>28. Which statement best describes tertiary cancer prevention?</legend>
+    <label><input type="radio" name="q28" value="1">Removing precancerous lesions to prevent invasive cancer</label>
+    <label><input type="radio" name="q28" value="2">Avoiding exposure to known carcinogens</label>
+    <label><input type="radio" name="q28" value="3">Screening individuals at average risk</label>
+    <label><input type="radio" name="q28" value="4">Providing end-of-life care</label>
+    <p class="explanation">Correct Answer: 1. Tertiary prevention involves removing or suppressing precancerous lesions to prevent the progression to invasive cancer.</p>
+  </fieldset>
+  
+  <!-- Question 29 -->
+  <fieldset data-answer="2">
+    <legend>29. Which organization provides guidelines for breast cancer screening in Canada?</legend>
+    <label><input type="radio" name="q29" value="1">American Cancer Society</label>
+    <label><input type="radio" name="q29" value="2">Canadian Task Force on Preventative Health Care</label>
+    <label><input type="radio" name="q29" value="3">World Health Organization</label>
+    <label><input type="radio" name="q29" value="4">National Institutes of Health</label>
+    <p class="explanation">Correct Answer: 2. The Canadian Task Force on Preventative Health Care provides guidelines for breast cancer screening in Canada.</p>
+  </fieldset>
+  
+  <!-- Question 30 -->
+  <fieldset data-answer="3">
+    <legend>30. What lifestyle change is considered a primary prevention measure for lung cancer?</legend>
+    <label><input type="radio" name="q30" value="1">Early detection using LDCT</label>
+    <label><input type="radio" name="q30" value="2">Vaccination</label>
+    <label><input type="radio" name="q30" value="3">Quitting smoking</label>
+    <label><input type="radio" name="q30" value="4">Using oxygen therapy</label>
+    <p class="explanation">Correct Answer: 3. Quitting smoking is a primary prevention measure for lung cancer, reducing exposure to carcinogens from tobacco.</p>
+  </fieldset>
+  
+    </form>
+    <button class="button" id="submitQuizButton">Submit Quiz</button>
+    <div id="result"></div>
+  </div>
+  <script>
+    document.getElementById('submitQuizButton').addEventListener('click', submitQuiz);
+
+    function submitQuiz() {
+      const fieldsets = document.querySelectorAll('fieldset');
+      let score = 0;
+
+      fieldsets.forEach((fieldset, index) => {
+        const questionName = `q${index + 1}`;
+        const selected = document.querySelector(`input[name="${questionName}"]:checked`);
+        const correctAnswer = parseInt(fieldset.getAttribute('data-answer'));
+        const explanation = fieldset.querySelector('.explanation');
+
+        if (selected) {
+          if (parseInt(selected.value) === correctAnswer) {
+            score++;
+            selected.parentElement.style.border = '2px solid green';
+          } else {
+            selected.parentElement.style.border = '2px solid red';
+          }
+          explanation.style.display = 'block';
+        } else {
+          explanation.textContent += " (Unanswered)";
+          explanation.style.display = 'block';
+        }
+      });
+
+      document.getElementById('result').textContent = `You scored ${score} out of ${fieldsets.length}!`;
+    }
+  </script>
+</body>
+</html>
